@@ -8,7 +8,9 @@ const GlobalInstance = () => {
   const fetchData = async () => {
     try {
       const resp1 = await axios(productsUrl);
-    } catch (error) {}
+    } catch (error) {
+      console.log(error.response);
+    }
   };
 
   useEffect(() => {
